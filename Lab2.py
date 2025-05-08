@@ -40,8 +40,6 @@ def calc_median_temperature(in_list):
         my_median = in_list[num]
     return my_median
 
-        
-
 
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
