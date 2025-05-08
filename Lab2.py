@@ -27,11 +27,21 @@ def find_min_max(in_list):
     return (lowest, highest)
 
 
-def sort_temperature(list1):
-    print()
+def sort_temperature(in_list):
+    out_list = sorted(in_list)
+    return out_list
 
-def calc_median_temperature(list1):
-    print()
+def calc_median_temperature(in_list):
+    if len(in_list)%2 == 0:
+        num = int(len(in_list)/2)
+        my_median = (in_list[num]+in_list[num-1])/2
+    elif len(in_list)%2 == 1:
+        num = len(in_list)//2
+        my_median = in_list[num]
+    return my_median
+
+        
+
 
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
