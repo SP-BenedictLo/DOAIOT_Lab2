@@ -46,5 +46,5 @@ def main():
     display_main_menu()
     num_list = get_user_input()
 
-"""if __name__ == "__main__":
-    main()"""
+if __name__ == "__main__":
+    main()
