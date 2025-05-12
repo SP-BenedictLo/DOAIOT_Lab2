@@ -9,8 +9,10 @@ def get_user_input():
 
 def calc_average(list1):
     avg = 0.0
+    sum = 0.0
     for i in list1:
-        avg += i 
+        sum += i 
+    avg = sum/len(list1)
     return avg 
 
 def find_min_max(in_list):
