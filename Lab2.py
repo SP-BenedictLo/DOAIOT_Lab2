@@ -12,7 +12,7 @@ def calc_average(list1):
     sum = 0.0
     for i in list1:
         sum += i 
-    avg = sum/len(list1)
+    avg = round(sum/len(list1), 3)
     return avg 
 
 def find_min_max(in_list):
