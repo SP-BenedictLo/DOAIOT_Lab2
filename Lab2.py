@@ -26,7 +26,7 @@ def find_min_max(in_list):
             highest = i
         elif i < lowest:
             lowest = i
-    return (lowest, highest)
+    return lowest, highest
 
 
 def sort_temperature(in_list):
@@ -47,6 +47,11 @@ def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
     display_main_menu()
     num_list = get_user_input()
+    print(f"Average Temperature: {calc_average(num_list):.2f}")
+    print(f"Median Temperature: {calc_median_temperature(num_list):.2f}")
+    print(f"Maximum Temperature: {find_min_max(num_list)[0]:.2f}")
+    print(f"Minimum Temperature: {find_min_max(num_list)[1]:.2f}")
+    print(f"Sorted List: {sort_temperature(num_list)}")
 
 if __name__ == "__main__":
     main()
