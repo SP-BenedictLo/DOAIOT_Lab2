@@ -34,14 +34,14 @@ def sort_temperature(in_list):
     return out_list
 
 def calc_median_temperature(in_list):
-    if len(in_list)%2 == 0:
-        num = int(len(in_list)/2)
-        my_median = (in_list[num]+in_list[num-1])/2
-    elif len(in_list)%2 == 1:
-        num = len(in_list)//2
-        my_median = in_list[num]
+    sort_list = sorted(in_list)
+    if len(sort_list)%2 == 0:
+        num = int(len(sort_list)/2)
+        my_median = (sort_list[num]+sort_list[num-1])/2
+    elif len(sort_list)%2 == 1:
+        num = len(sort_list)//2
+        my_median = sort_list[num]
     return my_median
-
 
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
